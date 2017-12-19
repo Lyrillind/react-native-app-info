@@ -5,7 +5,7 @@
 //
 
 #import "RNAppInfo.h"
-#import "RCTBridge.h"
+#import <React/RCTBridge.h>
 
 @implementation RNAppInfo
 RCT_EXPORT_MODULE();

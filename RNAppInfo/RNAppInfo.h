@@ -5,8 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RCTBridgeModule.h"
-#import "RCTLog.h"
+#import <React/RCTBridgeModule.h>
 
 @interface RNAppInfo : NSObject <RCTBridgeModule>
 @end
