@@ -7,19 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDD7BF841B2D5126006FDA75 /* libRNAppInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD7BF781B2D5125006FDA75 /* libRNAppInfo.a */; };
 		DBCB5CDE1B46E62D005CB38B /* RNAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCB5CDD1B46E62D005CB38B /* RNAppInfo.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CDD7BF851B2D5126006FDA75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDD7BF701B2D5125006FDA75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CDD7BF771B2D5125006FDA75;
-			remoteInfo = RNI18n;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CDD7BF761B2D5125006FDA75 /* CopyFiles */ = {
@@ -35,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		CDD7BF781B2D5125006FDA75 /* libRNAppInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAppInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDD7BF831B2D5126006FDA75 /* RNAppInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNAppInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCB5CDC1B46E62D005CB38B /* RNAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppInfo.h; sourceTree = "<group>"; };
 		DBCB5CDD1B46E62D005CB38B /* RNAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,14 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD7BF801B2D5126006FDA75 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDD7BF841B2D5126006FDA75 /* libRNAppInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				CDD7BF781B2D5125006FDA75 /* libRNAppInfo.a */,
-				CDD7BF831B2D5126006FDA75 /* RNAppInfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,24 +84,6 @@
 			productReference = CDD7BF781B2D5125006FDA75 /* libRNAppInfo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CDD7BF821B2D5126006FDA75 /* RNAppInfoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDD7BF8F1B2D5126006FDA75 /* Build configuration list for PBXNativeTarget "RNAppInfoTests" */;
-			buildPhases = (
-				CDD7BF7F1B2D5126006FDA75 /* Sources */,
-				CDD7BF801B2D5126006FDA75 /* Frameworks */,
-				CDD7BF811B2D5126006FDA75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CDD7BF861B2D5126006FDA75 /* PBXTargetDependency */,
-			);
-			name = RNAppInfoTests;
-			productName = RNI18nTests;
-			productReference = CDD7BF831B2D5126006FDA75 /* RNAppInfoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,9 +94,6 @@
 				ORGANIZATIONNAME = "Alexander Zaytsev";
 				TargetAttributes = {
 					CDD7BF771B2D5125006FDA75 = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
-					CDD7BF821B2D5126006FDA75 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -153,20 +111,9 @@
 			projectRoot = "";
 			targets = (
 				CDD7BF771B2D5125006FDA75 /* RNAppInfo */,
-				CDD7BF821B2D5126006FDA75 /* RNAppInfoTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CDD7BF811B2D5126006FDA75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDD7BF741B2D5125006FDA75 /* Sources */ = {
@@ -177,22 +124,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDD7BF7F1B2D5126006FDA75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CDD7BF861B2D5126006FDA75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CDD7BF771B2D5125006FDA75 /* RNAppInfo */;
-			targetProxy = CDD7BF851B2D5126006FDA75 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CDD7BF8A1B2D5126006FDA75 /* Debug */ = {
@@ -303,38 +235,6 @@
 			};
 			name = Release;
 		};
-		CDD7BF901B2D5126006FDA75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNI18nTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = RNAppInfoTests;
-			};
-			name = Debug;
-		};
-		CDD7BF911B2D5126006FDA75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNI18nTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = RNAppInfoTests;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -352,15 +252,6 @@
 			buildConfigurations = (
 				CDD7BF8D1B2D5126006FDA75 /* Debug */,
 				CDD7BF8E1B2D5126006FDA75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDD7BF8F1B2D5126006FDA75 /* Build configuration list for PBXNativeTarget "RNAppInfoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDD7BF901B2D5126006FDA75 /* Debug */,
-				CDD7BF911B2D5126006FDA75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
