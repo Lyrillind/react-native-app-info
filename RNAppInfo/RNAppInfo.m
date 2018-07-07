@@ -5,12 +5,13 @@
 //
 
 #import "RNAppInfo.h"
-#import <React/RCTBridge.h>
 
 @implementation RNAppInfo
 RCT_EXPORT_MODULE();
 
-
++ (BOOL)requiresMainQueueSetup {
+    return NO;
+}
 
 - (NSDictionary *)constantsToExport
 {
@@ -30,8 +31,9 @@ RCT_EXPORT_MODULE();
              @"getInfoiOS":iosVersion,
              @"getInfoDeviceName":infoDeviceName,
              
-    };
+             };
 }
+
 RCT_EXPORT_METHOD(setNetworkActivityIndicatorVisible:(BOOL)active) {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:active];
 }
